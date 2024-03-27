@@ -1,4 +1,4 @@
-package people.svet.library;
+package people.svet.fuga_for_java;
 
 public class NoMetadata extends Exception{
 }

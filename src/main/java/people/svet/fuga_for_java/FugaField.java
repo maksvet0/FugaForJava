@@ -1,4 +1,7 @@
-package people.svet.library;
+package people.svet.fuga_for_java;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class FugaField {
     public String Name;
@@ -48,6 +51,15 @@ public class FugaField {
                 Value = new FugaStruct(s);
                 Type = FugaTypes.STRUCT;
                 break;
+            case "arr":
+                List<Object> tedmp = new ArrayList<Object>();
+                String[] temp3 = temp[1].split(",");
+                for (String string : temp3)
+                    tedmp.add((Object) string);
+                Value = tedmp;
+                Type = FugaTypes.ARRAY;
+                break;
+
             default:
                 System.out.println(id);
                 throw new UnexpectednessFieldExtension();

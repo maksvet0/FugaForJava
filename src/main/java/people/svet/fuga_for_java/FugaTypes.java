@@ -1,4 +1,6 @@
-package people.svet.library;
+package people.svet.fuga_for_java;
+
+import java.util.List;
 
 public enum FugaTypes {
     INTEGER(Integer.class),
@@ -6,7 +8,8 @@ public enum FugaTypes {
     VERSION(FugaVersion.class),
     STRING(String.class),
     FLOAT(Float.class),
-    STRUCT(FugaStruct.class);
+    STRUCT(FugaStruct.class),
+    ARRAY(List.class);
 
     private final Class<?> AssocType;
     public Class<?> getAssocType(){

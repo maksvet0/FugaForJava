@@ -1,4 +1,4 @@
-package people.svet.library;
+package people.svet.fuga_for_java;
 
 import java.util.ArrayList;
 import java.util.List;
